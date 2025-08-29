@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); 
+
+html, body { 
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #4C0529; /* de la tipografía */
+  font-family: Helvetica, Arial, sans-serif;
+} 
+
+a{ /* significa que todos los vídulos van a tener estas carateríticas */
+  color: darkred;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover{ 
+  color: blueviolet; /* los puntos y comas son reglas que van a suceder*/
+  text-decoration: underline;
+  transition: all ease 2s;
+}
+
+a:hover:after{ 
+  content:" -‧°𐐪♡𐑂°‧-";
+}
+
+#bloque {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* posicionar el bloque en el centro según el tamaño de la ventana */
+  width: 70%; /* el tamaño del blaque termina siando el 50 + el padding x2 */
+  padding: 5%;
+  margin: auto;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 1rem;
+  box-shadow: 0 0 30px white;
+  z-index: 9999;
+}
+
+h1,h2, span.pixel{ /* la "coma" significa que tando al ... y al ... */
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+span.pixel{ /* el punto es del class, que el final es el nombre de la etiqueta que debe de estar en el html */
+  color: darkred;
+  font-size: 80%;
+}
+
+h1{ 
+  font-size: calc(2rem + 5vw);
+}
+
+h2{
+  font-size: calc(1rem + 2vw);
+}
+
+.pixel{
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+
+
+
+/*canvas {
+  display: block;
+}*/
