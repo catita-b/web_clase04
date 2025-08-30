@@ -19,7 +19,7 @@ function setup() { /* esta es una función que se ejecuta una única vez*/
   frameRate(10); /* los "frames" por segundo*/
 }
 
-function draw() { /* ESTO ES UN LOOP: se va actualizando a cada segundo, así que si pongo el fondo acá no hace un alínea contante, solo lo sigue.*/
+function draw() { /* ESTO ES UN LOOP: se va actualizando a cada segundo, así que si pongo el emoji acá no hace un alínea atrás, solo lo sigue.*/
   background(map(mouseX, 0, windowWidth, 0, 360),map(mouseY,0,windowHeight, 0, 100), 100) /* en el map el primer valor significa el mínimo de la posición del mouse y el segundo el máximo, siendo el terceso y cuerto valor el rango de color a cambiar*/
   colorMode(HSB, 360, 100, 100); /* H=el color S=saturación B=Brilllo */
   x = lerp(x, mouseX, 1.1);
